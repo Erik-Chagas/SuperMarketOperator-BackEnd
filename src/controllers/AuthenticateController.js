@@ -99,8 +99,6 @@ class AuthenticateController{
         }
 
         if(req.body.password != '' && req.body.password){
-            console.log('trocando senha')
-
             if(! (await bcrypt.compare(req.body.oldPassword, user.password))){
                 return res.status(403).json({
                     error: true,

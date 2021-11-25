@@ -97,7 +97,7 @@ class signUpController{
         try{
             const decoded = await jwt.verify(token, changeMailConfig.secret)
             const user = await UserDB.findOne({email: decoded.email})
-            console.log(decoded)
+
             if(!user){
                 return res.status(404).json({
                     error: true,
@@ -150,7 +150,6 @@ class signUpController{
         }
 
         if(user.status === 'Pending'){
-            console.log('aquiii')
             return res.status(403).json({
                 error: true,
                 message: 'Confirmação de email necessária'
