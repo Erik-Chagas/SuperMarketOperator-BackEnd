@@ -60,7 +60,7 @@ class AuthenticateController{
                 html: `<h1>Troca de endereço de email</h1>
                     <h2>Olá ${user.name}</h2>
                     <p>Por favor confirme seu email para realizar a troca de email clicando no link abaixo:</p>
-                    <a href=http://localhost:3000/confirmEmailChange/${confirmationCode}> Click here</a>
+                    <a href=${process.env.APP_FRONT_URL}/confirmEmailChange/${confirmationCode}> Click here</a>
                     </div>`,
               }).catch(err => console.log(err));
 

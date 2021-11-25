@@ -59,7 +59,7 @@ class signUpController{
                 html: `<h1>Confirmação de email</h1>
                     <h2>Olá ${req.body.name}</h2>
                     <p>Obrigado por se cadastrar. Por favor confirme seu email clicando no link abaixo:</p>
-                    <a href=http://localhost:3000/confirmAccount/${confirmationCode}> Click here</a>
+                    <a href=${process.env.APP_FRONT_URL}/confirmAccount/${confirmationCode}> Click here</a>
                     </div>`,
               }).catch(err => console.log(err));
     

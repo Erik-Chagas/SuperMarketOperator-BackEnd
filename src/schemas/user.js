@@ -1,4 +1,6 @@
 import mongoose from 'mongoose'
+import dotenv from 'dotenv'
+dotenv.config();
 
 const user = new mongoose.Schema({
     name: {type: String, required: true, ref: 'name'},
@@ -15,7 +17,7 @@ const user = new mongoose.Schema({
         },
         url: {
             type: String, 
-            default: 'http://localhost:8080/files/DefaultProfileImage.png'
+            default: `${process.env.APP_URL}/files/DefaultProfileImage.png`
         },
         key: {
             type: String, 
