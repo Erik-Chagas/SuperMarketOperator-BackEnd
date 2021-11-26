@@ -54,6 +54,6 @@ app.get('/categorias', AuthenticateController.GetCategories)
 
 app.post('/produtos', multer(multerConfig).single('file'), AuthenticateController.PostProduct)
 
-app.listen(8080, () => {
+app.listen(443, () => {
     console.log('Servidor ligado em  localhost:8080')
 })
