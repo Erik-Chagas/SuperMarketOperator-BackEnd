@@ -4,6 +4,7 @@ Esse projeto é o Back-End de uma aplicação web SPA feita em Nodejs + MongoDB 
 
 O objetivo desse projeto é fornecer o Back-End para um estoque de produtos virtual e em nuvem (hospedada na Heroku).
 O projeto completo pode ser acessado aqui: https://main.d23pp4yh4eacfm.amplifyapp.com/
+
 Código do Front-end: https://github.com/Erik-Chagas/SuperMarketOperator
 
 ## Principais tecnologias utilizadas
