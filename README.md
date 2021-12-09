@@ -3,7 +3,11 @@
 Esse projeto é o Back-End de uma aplicação web SPA feita em Nodejs + MongoDB + AWS + Heroku.
 
 O objetivo desse projeto é fornecer o Back-End para um estoque de produtos virtual e em nuvem (hospedada na Heroku).
-O projeto completo pode ser acessado aqui: https://main.d1udf7hpbfhyk6.amplifyapp.com/
+O projeto completo pode ser acessado aqui:
+
+Amplifyapp: https://main.d1udf7hpbfhyk6.amplifyapp.com/
+
+Netlify: https://blissful-aryabhata-bf9615.netlify.app/https://main.d1udf7hpbfhyk6.amplifyapp.com/
 
 Código do Front-end: https://github.com/Erik-Chagas/Super-Market-Operator
 
